@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            font-family: Arial;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        .grid{
+            display: grid;
+            grid-template-columns: 200px 200px 200px;
+            column-gap: 20px;
+        }
+        .friend-block{
+            width: 200px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.3);
+            vertical-align: top;
+            margin-right: 15px
+        }
+        .profile-picture{
+            width:200px;
+            height: 200px;
+            object-fit: cover;
+            margin-bottom: 12px;
+        }
+        .profile-name{
+            font-size: 18px;
+            font-weight: bold;
+            margin-left: 8px;
+            margin-bottom: 5px;
+        }
+        .mutual-row{
+            display: grid;
+            grid-template-columns: 35px 1fr;
+            align-items: center;
+            margin-left: 8px;
+            margin-bottom: 10px;
+        }
+        .mutual-pfp{
+            width:28px;
+            height: 28px;
+            border-radius: 14px;
+            object-fit: cover;
+            margin-right: 4px;
+            vertical-align: middle;
+        }
+        .mutual-text{
+            color: rgb(101, 101, 101);
+        }
+        .add-friend-button{
+            font-family: Arial;
+            background-color: rgb(37, 117, 255);
+            color: white;
+            margin-left: 8px;
+            margin-bottom: 8px;
+            border: none;
+            border-radius: 5px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        .add-friend-button:hover{
+            cursor:pointer;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div class = "grid">
+        <div class= "friend-block">
+            <img class = "profile-picture" src="pictures/cat.jpg">
+
+            <p class = "profile-name">
+                Oliver
+            <p>
+            <div class = "mutual-row">
+                <img class = "mutual-pfp" src="pictures/dog2.jpg">
+                <p class = "mutual-text">
+                    2 mutual friends
+                </p>
+            </div>
+            <button class = "add-friend-button">
+                Add Friend
+            </button>
+        </div>
+        <div class= "friend-block">
+            <img class = "profile-picture" src="pictures/cat2.jpg">
+
+            <p class = "profile-name">
+                Mimi
+            <p>
+            <div class = "mutual-row">
+                <img class = "mutual-pfp" src="pictures/dog2.jpg">
+                <p class = "mutual-text">
+                    3 mutual friends
+                </p>
+            </div>
+            <button class = "add-friend-button">
+                Add Friend
+            </button>
+        </div>
+        <div class= "friend-block">
+            <img class = "profile-picture" src="pictures/dog.jpg">
+
+            <p class = "profile-name">
+                Rex
+            <p>
+            <div class = "mutual-row">
+                <img class = "mutual-pfp" src="pictures/dog2.jpg">
+                <p class = "mutual-text">
+                    4 mutual friends
+                </p>
+            </div>
+            <button class = "add-friend-button">
+                Add Friend
+            </button>
+        </div>
+    </div>
+
+
+
+</body>
+</html>

@@ -12,6 +12,14 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: white;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: lightgray;
 }
 
 .left-section{
@@ -44,6 +52,7 @@
     border-color: rgb(177, 177, 177);
     border-radius: 2px;
     box-shadow: inset 1px 2px 3px rgba(0,0,0,0.05);
+    width: 0;
 
 }
 .search-bar::placeholder{
@@ -82,6 +91,48 @@
 }
 
 .right-section{
-    background-color: lightblue;
-    width: 200px;
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+.upload{
+    height: 30px;
+    width: 30px;
+    border: none;
+    background-color: white;
+
+}
+.upload-icon{
+    height: 24px;
+}
+.youtube-apps{
+    height: 35px;
+    width: 35px;
+    border: none;
+    background-color: white;
+}
+.youtube-apps-icon{
+    height:24px;
+}
+.notifications{
+    height: 35px;
+    width: 35px;
+    border: none;
+    background-color: white;
+}
+.notifications-icon{
+    height: 24px;
+}
+.pfp{
+    height: 35px;
+    width: 35px;
+    background-color: white;
+    border: none;
+}
+.pfp-icon{
+    height: 32px;
+
 }
